@@ -53,8 +53,13 @@ public class PeripheralsController {
     } 
     
     
+//    @GetMapping("/price/{price}")
+//    public List<Peripherals> productByPrice( double precio){
+//        return accessoryService.productByPrice(precio);
+//    }
+    
     @GetMapping("/price/{price}")
-    public List<Peripherals> productByPrice( double precio){
+    public List<Peripherals> productByPrice(@PathVariable("price") double precio){
         return accessoryService.productByPrice(precio);
     }
     

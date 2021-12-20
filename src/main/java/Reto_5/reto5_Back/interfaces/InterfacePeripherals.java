@@ -12,5 +12,5 @@ public interface InterfacePeripherals extends MongoRepository<Peripherals, Strin
     @Query("{'description':{'@regex': '?0','$options':'i'}   }")
     public List<Peripherals> findByDescriptionLike(String description);
     
-    
+       
 }
