@@ -43,9 +43,11 @@ public class UserRepositorio {
         return userCrudRepository.findByEmailAndPassword(email, password);
     }
     
-//    public Optional<User> lastUserId(){
-//        return userCrudRepository.findTopByOrderByIdDesc();
-//    }
+    
+    /// nuevo
+    public Optional<User> lastUserId(){
+        return userCrudRepository.findTopByOrderByIdDesc();
+    }
 //     
     
     public List<User> birthtDayList(String monthBirthtDay){

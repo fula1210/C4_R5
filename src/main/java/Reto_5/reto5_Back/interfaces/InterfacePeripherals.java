@@ -9,7 +9,7 @@ public interface InterfacePeripherals extends MongoRepository<Peripherals, Strin
     
     public List<Peripherals> findByPriceLessThanEqual(double precio);
     
-    @Query("{'description':{'@regex': '?0','$options':'i'}   }")
+    //@Query("{'description':{'@regex': '?0','$options':'i'}}")
     public List<Peripherals> findByDescriptionLike(String description);
     
        
